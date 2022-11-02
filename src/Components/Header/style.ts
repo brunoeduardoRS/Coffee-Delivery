@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const HeaderContent = styled.header`
+    z-index: 99999;
     display: flex;
+    width:80vw;
     height: 104px;
     padding: 32px 32px;
-    width: 100vw;
-    max-width: 1420px;
     box-sizing: border-box;
+    position: fixed;
     gap:820px;
     background: ${props=>props.theme["background"]};
     img{
@@ -16,7 +17,8 @@ export const HeaderContent = styled.header`
 `
 export const MenuHeader= styled.div`
 display:flex;
-gap:12px`
+gap:12px
+`
 
 export const HeaderLocalization = styled.div`
  display: flex;

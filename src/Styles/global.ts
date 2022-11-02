@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
 * {
@@ -19,3 +19,9 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 1rem;
     }
     `
+export const GlobalStyleDiv = styled.div`
+    width: 90vw;
+    background:${props=>props.theme["background"]};
+    height: 100%;
+    margin-left: 5rem;
+`
